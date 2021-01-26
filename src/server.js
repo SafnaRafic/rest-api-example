@@ -7,9 +7,10 @@ const Movies = require("./controllers/Movies");
 server.use(bodyParser.json());
 
 server.get("/", (req, res) => {
-  res.send("Hello!");
+    res.send("Hello!");
 });
 
 server.get("/movies/list", Movies.list);
+server.get("/movies/add", Movies.add);
 
 server.listen(PORT, () => console.log(`Server started on port: ${PORT} 🚀`));

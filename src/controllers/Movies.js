@@ -19,4 +19,5 @@ const add = async(req, res) => {
 
 module.exports = {
     list,
+    add,
 };
